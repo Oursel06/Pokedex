@@ -1,0 +1,23 @@
+.navbar {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.input_searchbar {
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.logo_pokedex {
+    width: 200px;
+    height: 80px;
+}
