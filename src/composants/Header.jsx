@@ -2,6 +2,7 @@ import React from "react";
 import pokedex from '../res/logo_pokedex.png';
 import "../styles/header.css"
 import Langue from "./Langue";
+import { TextField } from "@material-ui/core";
 
 function Header({ searchtext, langtype }) {
   return (
@@ -15,7 +16,7 @@ function Header({ searchtext, langtype }) {
         <Langue languetype={langtype} />
       </div>
       <div className="searchbar">
-        <input type="text" placeholder="Rechercher un pokemon..." className="input_searchbar" onChange={event => searchtext(event.target.value)} />
+        <TextField type="search" label="Rechercher un pokemon..." variant="outlined" fullWidth onChange={event => searchtext(event.target.value)} />
       </div>
     </div>
   );
