@@ -1,3 +1,5 @@
+import { Select } from "@material-ui/core";
+
 function Langue({ languetype }) {
 
   const handleChange = e => {
@@ -8,7 +10,7 @@ function Langue({ languetype }) {
   return (
     <div className="App">
       <b>Langage </b>
-      <select onChange={handleChange}>
+      <Select onChange={handleChange}>
         <option value="fr">FR</option>
         <option value="es">ES</option>
         <option value="en">EN</option>
@@ -20,7 +22,7 @@ function Langue({ languetype }) {
         <option value="zh-Hant">ZH-HANT</option>
         <option value="ja-Hrkt">JA-HRKT</option>
         <option value="zh-Hans">ZH-HANS</option>
-      </select>
+      </Select>
     </div>
   );
 }
